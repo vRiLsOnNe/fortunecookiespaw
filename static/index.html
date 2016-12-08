@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Fabicon-->
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+  <!-- Vendor style-->
+  <link rel="stylesheet" href="./vendor/sweetalert/dist/sweetalert.css">
+  <link type="text/css" rel="stylesheet" href="./vendor/materialize/css/materialize.css"  media="screen,projection"/>
+  <!--My stylesheet-->
+  <link rel="stylesheet" href="./css/site.css">
+  <!--My JavaScripts-->
+  <script src="./js/site.js"></script>    
+</head>
+<body class="black">
+    <nav>
+    <div class="nav-wrapper  light-green accent-4">
+      <a href="http://www.itgustavoamadero.edu.mx/" class="brand-logo img-header"><img src="./img/gam.png" alt="ITGAM" class="img-header"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="./ingresafortuna.html"><i class="material-icons left">note_add</i>Formulario</a></li>
+        <li><a href="javascript:getFortuneFromServer()"class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="¿Crees tener fortuna? Prueba!"><i class="material-icons right">view_module</i>Prueba tu fortuna</a></li>
+      </ul>
+    </div>
+  </nav>  
+  <div class="row">
+        <div class="section black">
+            <div class="row container">
+            <h2 class="header color-font">Quieres probar tu fortuna!</h2>
+            <p class="grey-text text-darken-3 lighten-3 color-font">Para poder probar tu fortuna dirígete a la barra de navegación y presiona en Prueba tu fortuna.</p>
+            </div>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax"><img src="./img/nvidia.png"></div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <!-- Script sweetalert-->
+    <script src="./vendor/jquery/dist/jquery.min.js"></script>
+    <script src="./vendor/materialize/js/materialize.min.js"></script>
+    <script src="./vendor/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./vendor/materialize/js/parallax.js"></script>
+   <script>
+        $(document).ready(function(){
+            $('.tooltipped').tooltip({delay: 10});
+            $('.parallax').parallax();
+        });
+    </script>
+</body>
+</html>
